@@ -21,9 +21,6 @@ import edu.wpi.first.cscore.VideoSource.ConnectionStrategy;
  */
 public class Robot extends TimedRobot {
 
-
-  AHRS navX2Micro = new AHRS(SerialPort.Port.kUSB);
-
   //public static PneumaticsSubsystem pSubsystem = new PneumaticsSubsystem();
   private Command m_autonomousCommand;
   // public static ExampleSubsystem ExampleSubsystem = new ExampleSubsystem();
