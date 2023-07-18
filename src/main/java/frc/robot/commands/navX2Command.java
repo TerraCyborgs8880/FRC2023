@@ -14,7 +14,7 @@ import edu.wpi.first.wpilibj.SerialPort;
 import com.kauailabs.navx.frc.AHRS;
 
 /** An example command that uses an example subsystem. */
-public class navX2Command extends CommandBase {
+public class NavX2Command extends CommandBase {
 
     @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
 
@@ -24,9 +24,9 @@ public class navX2Command extends CommandBase {
      * @param subsystem The subsystem used by this command.
      */
 
-    public navX2Command() {
+    public NavX2Command() {
         super();
-        addRequirements(RobotContainer.navX2Subsystem);  // Use addRequirements() here to declare subsystem dependencies.
+        addRequirements(RobotContainer.NavX2Subsystem);  // Use addRequirements() here to declare subsystem dependencies.
     }
 
     // Called when the command is initially scheduled.

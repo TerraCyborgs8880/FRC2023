@@ -28,7 +28,7 @@ public class ExampleCommand extends CommandBase {
   private final Limelight m_limelight;
   private final Timer timer;
   private final PneumaticsSubsystem m_pSubsystem;
-  private final navX2Subsystem m_navX2Subsystem;
+  private final NavX2Subsystem m_navX2Subsystem;
   private boolean atAngle;
   private int stage;
 
@@ -37,7 +37,7 @@ public class ExampleCommand extends CommandBase {
  * @param m_autonomous
  * @param m_autonomous
    */
-  public ExampleCommand(ExampleSubsystem subsystem, Drivetrain drivetrain, ElevatorSubsystem elevatorSubsystem, ArmSubsystem armSubsystem, Limelight limelight, GrabberSubsystem grabberSubsystem, PneumaticsSubsystem pSubsystem) {
+  public ExampleCommand(ExampleSubsystem subsystem, Drivetrain drivetrain, ElevatorSubsystem elevatorSubsystem, ArmSubsystem armSubsystem, Limelight limelight, GrabberSubsystem grabberSubsystem, PneumaticsSubsystem pSubsystem, NavX2Subsystem navX2Subsystem) {
     m_subsystem = subsystem;
     m_drivetrain = drivetrain;
     m_elevatorSubsystem = elevatorSubsystem;
@@ -45,6 +45,7 @@ public class ExampleCommand extends CommandBase {
     m_limelight = limelight;
     m_GrabberSubsystem = grabberSubsystem;
     m_pSubsystem = pSubsystem;
+    m_navX2Subsystem = navX2Subsystem
     timer = new Timer();
 
     addRequirements(m_subsystem);

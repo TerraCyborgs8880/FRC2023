@@ -30,6 +30,7 @@ public class Robot extends TimedRobot {
   public static Command armCommand;
   public static Command grabberUp;
   public static Command grabberDown;
+  public static Command m_navX2Command;
 
   private static Timer timer;
   //public static ElevatorSubsystem ElevatorSubsystem = new ElevatorSubsystem();
@@ -61,6 +62,7 @@ public class Robot extends TimedRobot {
     grabberUp = new GrabberUp();
     grabberDown = new GrabberDown();
     pMaticsCommand = new PneumaticsCommand(); //NOTE: check this please
+    m_navX2Command = new NavX2Command();
     
   }
 
@@ -126,6 +128,7 @@ public class Robot extends TimedRobot {
     elevatorCommand.schedule();
     armCommand.schedule();
     pMaticsCommand.schedule();
+    m_navX2Command.schedule();
 
 
   }
