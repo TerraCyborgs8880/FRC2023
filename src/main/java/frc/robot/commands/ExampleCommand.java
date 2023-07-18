@@ -28,6 +28,7 @@ public class ExampleCommand extends CommandBase {
   private final Limelight m_limelight;
   private final Timer timer;
   private final PneumaticsSubsystem m_pSubsystem;
+  private final navX2Subsystem m_navX2Subsystem;
   private boolean atAngle;
   private int stage;
 
