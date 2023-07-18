@@ -19,7 +19,6 @@ import edu.wpi.first.wpilibj.motorcontrol.MotorControllerGroup;
 import com.revrobotics.*;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
-//import com.kauailabs.navx.frc.AHRS;
 import edu.wpi.first.wpilibj.SerialPort.Port;
 
 
@@ -89,8 +88,6 @@ public class Drivetrain extends SubsystemBase {
         if(input < 0) {result = -Math.pow(input, Constants.exponentialDrivePower);}
         return result;
     }
-
-    //private AHRS ahrs = new AHRS(Port.kUSB);
 
 
 }
