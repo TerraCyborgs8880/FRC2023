@@ -13,22 +13,22 @@ import frc.robot.Constants;
 import edu.wpi.first.wpilibj.SerialPort;
 import com.kauailabs.navx.frc.AHRS;
 
-public class navX2Subsystem extends SubsystemBase {
+public class NavX2Subsystem extends SubsystemBase {
   
-    private static navX2Subsystem instance = null;
+    private static NavX2Subsystem instance = null;
 
     public static AHRS navX2Micro;
 
-    public PneumaticsSubsystem() {
+    public NavX2Subsystem() {
         super();
         navX2Micro = new AHRS(SerialPort.Port.kUSB);
     }
 
-    private static navX2Subsystem getInstance(){
+    private static NavX2Subsystem getInstance(){
 
         if (instance == null){
-            System.out.println("navX2Subsystem init");
-            instance = new navX2Subsystem();
+            System.out.println("NavX2Subsystem init");
+            instance = new NavX2Subsystem();
         }
         return instance;
 
