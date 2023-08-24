@@ -45,7 +45,7 @@ public class ExampleCommand extends CommandBase {
     m_limelight = limelight;
     m_GrabberSubsystem = grabberSubsystem;
     m_pSubsystem = pSubsystem;
-    m_navX2Subsystem = navX2Subsystem
+    m_navX2Subsystem = navX2Subsystem;
     timer = new Timer();
 
     addRequirements(m_subsystem);
